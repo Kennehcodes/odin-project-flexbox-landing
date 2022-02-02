@@ -6,9 +6,25 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale-1.0">
     </head>
-    <body class="body-flex__container"><p>col-top-level-containing-flexbox.</p>
-        <header class="body-flex__item__1 navbar-container">1st flex item (nav bar--flex-row) (col)</header>
-        <article class="body-flex__item__2 hero-container">I am the hero maaan</article>
+    <body class="body-flex__container">
+        <header class="body-flex__item__1 navbar-container">
+            <a class="header-logo" href="#" alt="A place to land.">Header Logo</a>
+            <ul>
+                <li class="header-link"><a>header link one</a></li>
+                <li class="header-link"><a>header link two</a></li>
+                <li class="header-link"><a>header link three</a></li>
+            </ul>
+        </header>
+        <article class="body-flex__item__2 hero-container">
+           <div class="hero-left__flex">
+                <h1 class="hero-main__text">This website is awesome</h1>
+                <h2 class="hero-main__subtext">This website subtext that goes here under main title. It's a smaller font and the color is lower in contrast.</h2>
+                <button class="hero-button">Sign up</button>
+           </div>
+           <div class="hero-right__flex">
+                <div class="hero-image">image placeholder</div>
+           </div>
+        </article>
         <main class="body-flex__item__3 content-main-non-flex"> I dont want to be a flexbox--but I have to be. but I am a container with a div and a flex item
             <div class="content-main__flex-container"></div>
         </main>

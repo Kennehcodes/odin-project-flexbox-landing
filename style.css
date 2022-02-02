@@ -6,33 +6,19 @@
 I just decided to do a full on copycat to
 test my flexbox skills.
 
-background color- hero and footer
-#1F2937
-
-Header-logo text
-font: #F9FAF8 font-family
-
-Hero Main text 
-"This website is awesome"
-font: #F9FAF8 900 48px font family name ;
 
 
-Hero Secondary Text
-header-link text
 
-text-decoration: none;
-font: #E5E7EB 400 18px font family
 
-button/cta
 
-background-color: #3882F6
 
-Information header text?
+
+
+
+Information header text-
 font: #1F2937 900 36px font-family
 
-Quote section
-
-background-color: #E5E7EB;
+Quote section-
 font: # 1F2937 300i 36px font-family;
 
 
@@ -60,10 +46,12 @@ body-flex__item__6
      */
      
      .body-flex__container {
+         margin-top: 0;
          display: flex;
          flex-direction: column;
          width: 100vw;
-        align-items: center;
+         align-items: center;
+         background-color: #000;;
          
      }
      
@@ -74,10 +62,9 @@ body-flex__item__6
      .body-flex__item__5,
      .body-flex__item__6 
      {
-         border: red solid 3px;
+         /*border: red solid 3px; */
          padding: 1rem;
-         margin: 1rem; 
-         width: 65%;
+         width: 82%;
         flex-basis: 150px;
         /*this is height for all items*/
         }
@@ -105,19 +92,11 @@ body-flex__item__6
          
      
           
-     
+        .
           
           
           */
-
-
-          .navbar-container,
-          .hero-container,
-          .content-main-non-flex,
-          .quote__box-container,
-          .cta-container,
-          .footer-container { background-color: pink;}
-
+        
 
           .navbar-container,
           .hero-container,
@@ -125,3 +104,132 @@ body-flex__item__6
           .quote__box-container,
           .cta-container,
           .footer-container { background-color: pink;}
+
+
+
+          /**styling for site sections- all main flex stuff above */
+
+          
+        .content-main-non-flex,
+        .cta-container {
+             background-color: #fff;;
+         }
+
+
+        .hero-container,
+        .footer-container,
+        .navbar-container {
+            background-color: #1F2937;
+         }
+
+        /*non-grouped selectors from here down*/
+
+         
+
+          .navbar-container {
+              display: flex; 
+              flex-direction: row;
+              justify-content: space-around;
+              align-items: baseline;
+           
+        
+                           
+          } 
+
+                .header-logo {
+                    text-decoration: none;
+                    font: 800 1.5rem 'Roboto', sans-serif;
+                    color: #F9FAF8; 
+                  
+                }
+
+                
+                .navbar-container ul:first-of-type
+                {
+                    list-style: none;
+                    display: flex; 
+                    justify-content: flex-end;
+                    color: #fff;
+                    gap: 1.5rem;
+                }
+                .navbar-container li
+                {
+                 text-decoration: none; 
+                }
+
+                .header-link a:hover {
+                    color: #3882F6; 
+                }
+
+                .header-link a:focus, 
+                .header-link a:focus-visible,
+                .header-link a:active {
+                    color: #a8a8a8; 
+                    outline: none;
+                }
+            
+            
+        .hero-container { 
+            display: flex;
+            justify-content: center;
+                gap: 1rem;       
+        }
+
+            .hero-left__flex,
+            .hero-right__flex {
+               height: 15rem;
+                
+            }
+          
+            .hero-left__flex {
+                display: flex;
+                flex-direction: column;
+                flex-basis: 34%;
+            }
+
+            .hero-main__text {
+                 color: #F9FAF8;
+                 margin: 0;
+                 font: 900 3rem 'Roboto', sans-serif;
+             }
+
+
+                .hero-main__subtext { 
+                color: #E5E7EB; 
+                font: 400 1.125em 'Roboto', sans-serif;
+
+            }
+                .hero-button { background-color: orange;
+                width: 6rem;}
+
+            .hero-right__flex {
+              outline: solid 2px red; 
+                  flex-basis: 34%;
+                    display: flex;
+            }
+            .hero-image {background-color: salmon;
+            
+                height: 500px; 
+                flex-shrink: 0;
+                z-index: 1;
+            }
+
+                /*
+
+          .content-main-non-flex {}
+          
+    
+
+        .quote__box-container {
+             background-color: #E5E7EB;
+         }
+
+           /* .cta-container {
+            
+         }
+      inside cta background-color: #3882F6;  
+         
+          .footer-container {}
+          */*/
+         
+        
