@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+}
 /* these are the project colors, 
 I just decided to do a full on copycat to
 test my flexbox skills.
@@ -10,36 +14,114 @@ font: #F9FAF8 font-family
 
 Hero Main text 
 "This website is awesome"
-font: #F9FAF8 extra-bold 48px font family name ;
+font: #F9FAF8 900 48px font family name ;
 
 
 Hero Secondary Text
 header-link text
 
 text-decoration: none;
-font: #E5E7EB 18px font family
+font: #E5E7EB 400 18px font family
 
 button/cta
 
 background-color: #3882F6
 
 Information header text?
-font: #1F2937 extra-bold 36px font-family
+font: #1F2937 900 36px font-family
 
 Quote section
 
 background-color: #E5E7EB;
-font: # 1F2937 light-italic 36px font-family;
+font: # 1F2937 300i 36px font-family;
 
 
-
-
-
-    body-flex__container
-     body-flex__item__1 navbar-container
-      body-flex__item__2 hero-container
-      body-flex__item__3 content-main-non-flex
-       content-main__flex-container
+body-flex__container
+     
+body-flex__item__1 
+    navbar-container
     
-    body-flex__item__4 quote__box-container
-     body-flex__item__5 footer-container
+    
+body-flex__item__2 
+    hero-container
+    
+body-flex__item__3
+     content-main-non-flex
+
+        nested in flex item 300 italic content-main__flex-container
+    
+body-flex__item__4
+     quote__box-container
+
+body-flex__item__5
+    cta-container
+body-flex__item__6
+     footer-container
+     */
+     
+     .body-flex__container {
+         display: flex;
+         flex-direction: column;
+         width: 100vw;
+        align-items: center;
+         
+     }
+     
+     .body-flex__item__1,
+     .body-flex__item__2,
+     .body-flex__item__3,
+     .body-flex__item__4,
+     .body-flex__item__5,
+     .body-flex__item__6 
+     {
+         border: red solid 3px;
+         padding: 1rem;
+         margin: 1rem; 
+         width: 65%;
+        flex-basis: 150px;
+        /*this is height for all items*/
+        }
+
+
+
+    /* body-flex__item__1 
+     body-flex__item__2
+     body-flex__item__3
+     body-flex__item__4
+     body-flex__item__5 
+        .body-flex__item__6*/
+         
+         
+         
+  /*alt names for body-flex__items
+         navbar-container
+         hero-container
+         content-main-non-flex
+         quote__box-container
+         cta-container
+         footer-container
+            
+         content-main__flex-container
+         
+     
+          
+     
+          
+          
+          */
+
+
+          .navbar-container,
+          .hero-container,
+          .content-main-non-flex,
+          .quote__box-container,
+          .cta-container,
+          .footer-container { background-color: pink;}
+
+
+          .navbar-container,
+          .hero-container,
+          .content-main-non-flex,
+          .quote__box-container,
+          .cta-container,
+          .footer-container { background-color: pink;}
