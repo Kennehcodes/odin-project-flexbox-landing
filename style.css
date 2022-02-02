@@ -221,10 +221,56 @@
 
 
             .cta-container { 
-                outline: solid pink 2px;
                  flex-basis: 22rem;
-            
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                
          }
+         .cta-box {
+            background-color:#3882F6;
+            flex-basis: 70%;
+           padding: 1.6rem;
+           color: #fff;
+            border-radius: 9px;
+            align-items: center;
+            align-content: center;
+            justify-content: space-around;
+            display: flex;
+         }
+       
+        .cta-left 
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            align-content: center;
+        }
+         .cta-left h2 {
+             margin-bottom: 0rem;
+         }
+
+         .cta-left p { 
+             margin-top: 0.2rem;
+         }
+         .cta-right button 
+         {
+             flex-shrink: 0;
+             background-color: #3882F6;
+             border: rgb(255, 255, 255) 3px solid;
+             border-radius: 8px;
+             padding: 0.45rem 2.2rem;
+             font-size: 1.2rem;
+             color: white;
+             font-weight: 900;
+             text-decoration: none;
+             text-align: center;
+             vertical-align: middle;
+         }
+
+
+
       /*inside cta background-color: #3882F6;  */
          
           .footer-container {
