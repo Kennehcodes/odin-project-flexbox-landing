@@ -2,44 +2,6 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
-/* these are the project colors, 
-I just decided to do a full on copycat to
-test my flexbox skills.
-
-
-
-
-
-
-
-
-
-
-
-
-
-body-flex__container
-     
-body-flex__item__1 
-    navbar-container
-    
-    
-body-flex__item__2 
-    hero-container
-    
-body-flex__item__3
-     content-main-non-flex
-
-        nested in flex item 300 italic content-main__flex-container
-    
-body-flex__item__4
-     quote__box-container
-
-body-flex__item__5
-    cta-container
-body-flex__item__6
-     footer-container
-     */
      
      .body-flex__container {
          margin-top: 0;
@@ -59,55 +21,9 @@ body-flex__item__6
      .body-flex__item__6 
      {
          /*border: red solid 3px; */
-         padding: 1rem;
+
          width: 100%;
-        
-    
-        
-        
-       
-        /*this is height for all items*/
-        }
-
-
-
-    /* body-flex__item__1 
-     body-flex__item__2
-     body-flex__item__3
-     body-flex__item__4
-     body-flex__item__5 
-        .body-flex__item__6*/
-         
-         
-         
-  /*alt names for body-flex__items
-         navbar-container
-         hero-container
-         content-main-non-flex
-         quote__box-container
-         cta-container
-         footer-container
-            
-         content-main__flex-container
-         
-     
-          
-        .
-          
-          
-          */
-        
-
-          .navbar-container,
-          .hero-container,
-          .content-main-non-flex,
-          .quote__box-container,
-          .cta-container,
-          .footer-container { background-color: pink;}
-
-
-
-          /**styling for site sections- all main flex stuff above */
+            }
 
           
         .content-main-non-flex,
@@ -120,18 +36,14 @@ body-flex__item__6
         .footer-container,
         .navbar-container {
             background-color: #1F2937;
-         }
-
-        /*non-grouped selectors from here down*/
-
-         
+         }         
 
           .navbar-container {
               display: flex; 
               flex-direction: row;
               justify-content: space-around;
               align-items: baseline;
-           padding-bottom: 5rem;
+           padding-bottom: 5rem; 
         
                            
           } 
@@ -174,9 +86,10 @@ body-flex__item__6
             display: flex;
             justify-content: center;
              gap: 1rem;
-             padding-top: 2rem;
-             padding-bottom: 7rem;
-        
+              padding-top: 2rem;
+                padding-bottom: 7rem;
+            
+    
                   
         }
 
@@ -190,7 +103,8 @@ body-flex__item__6
             .hero-left__flex {
                 display: flex;
                 flex-direction: column;
-                flex-basis: 33%;
+                flex-basis: 35%;
+                padding: 0 1rem;
                 text-align: left;
             }
 
@@ -218,14 +132,14 @@ body-flex__item__6
     }
 
             .hero-right__flex {
-                  flex-basis: 33%;
+                  flex-basis: 30%;
                   display: flex;
              
                 color: white;
             }
             .hero-image {background-color: slategrey;
                 flex-basis: 100%;
-                width: 100%;
+               height: 85%;
                 display: flex;
               justify-content: center;
                 align-items: center;
@@ -236,6 +150,7 @@ body-flex__item__6
           .info-header__text {
               text-align: center;
               font: 900 2.25rem 'Roboto', sans-serif;
+             padding-top: 1rem;
               color: #1F2937;
           }
 
@@ -244,7 +159,7 @@ body-flex__item__6
               display: flex;
               justify-content: center;
               gap: 2rem;
-              padding-bottom: 7rem;
+             padding-bottom: 7rem;
 
           }
 
@@ -277,32 +192,37 @@ body-flex__item__6
             
             background-color: #E5E7EB;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: center;
-            align-content: center;
-          
+            flex-basis: 26rem;
+            align-items: center;
+            padding-top: 1.5rem;
+    
+        }
+        .flex-quotebox {
+            flex-basis: 50%;
+            
         }
 
          .quote {
-             padding: 5rem 25%;
+            
              font:300 italic 2.25rem 'Roboto', sans-serif;
              color: #1F2937; 
-            align-self: center;
-             
+             text-align: justify;
+
             }
 
          .author {
              font: 900 1.5rem 'Roboto', sans-serif;
              color: black;
-             align-self: flex-end;
-            
-        
+        text-align: right;
             }
 
 
 
             .cta-container { 
-                 flex-basis: 150px;
+                outline: solid pink 2px;
+                 flex-basis: 22rem;
             
          }
       /*inside cta background-color: #3882F6;  */
