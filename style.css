@@ -1,0 +1,45 @@
+/* these are the project colors, 
+I just decided to do a full on copycat to
+test my flexbox skills.
+
+background color- hero and footer
+#1F2937
+
+Header-logo text
+font: #F9FAF8 font-family
+
+Hero Main text 
+"This website is awesome"
+font: #F9FAF8 extra-bold 48px font family name ;
+
+
+Hero Secondary Text
+header-link text
+
+text-decoration: none;
+font: #E5E7EB 18px font family
+
+button/cta
+
+background-color: #3882F6
+
+Information header text?
+font: #1F2937 extra-bold 36px font-family
+
+Quote section
+
+background-color: #E5E7EB;
+font: # 1F2937 light-italic 36px font-family;
+
+
+
+
+
+    body-flex__container
+     body-flex__item__1 navbar-container
+      body-flex__item__2 hero-container
+      body-flex__item__3 content-main-non-flex
+       content-main__flex-container
+    
+    body-flex__item__4 quote__box-container
+     body-flex__item__5 footer-container
