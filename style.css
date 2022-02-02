@@ -269,6 +269,18 @@
              vertical-align: middle;
          }
 
+         .cta-right button:hover
+         {
+             background-color: #fff;
+             color: #3882F6;
+         }
+
+         .cta-right button:active,
+         .cta-right button:focus
+         {outline: none;
+           background-color:  #1c3f77; 
+            color: #d4e5ff; 
+             border: #1c3f77 solid 3px;}
 
 
       /*inside cta background-color: #3882F6;  */
