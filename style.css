@@ -15,11 +15,7 @@ test my flexbox skills.
 
 
 
-Information header text-
-font: #1F2937 900 36px font-family
 
-Quote section-
-font: # 1F2937 300i 36px font-family;
 
 
 body-flex__container
@@ -64,8 +60,12 @@ body-flex__item__6
      {
          /*border: red solid 3px; */
          padding: 1rem;
-         width: 82%;
-        flex-basis: 150px;
+         width: 100%;
+        
+    
+        outline: magenta 4px solid; 
+        
+       
         /*this is height for all items*/
         }
 
@@ -131,7 +131,7 @@ body-flex__item__6
               flex-direction: row;
               justify-content: space-around;
               align-items: baseline;
-           
+           padding-bottom: 5rem;
         
                            
           } 
@@ -141,11 +141,12 @@ body-flex__item__6
                     font: 800 1.5rem 'Roboto', sans-serif;
                     color: #F9FAF8; 
                   
+                  
                 }
 
                 
                 .navbar-container ul:first-of-type
-                {
+                { 
                     list-style: none;
                     display: flex; 
                     justify-content: flex-end;
@@ -172,19 +173,24 @@ body-flex__item__6
         .hero-container { 
             display: flex;
             justify-content: center;
-                gap: 1rem;       
+             gap: 1rem;
+             padding-bottom: 7rem;
+        
+                  
         }
 
             .hero-left__flex,
             .hero-right__flex {
                height: 15rem;
-                
+               border: solid 3px purple;
+            
             }
           
             .hero-left__flex {
                 display: flex;
                 flex-direction: column;
-                flex-basis: 34%;
+                flex-basis: 33%;
+                text-align: left;
             }
 
             .hero-main__text {
@@ -199,37 +205,113 @@ body-flex__item__6
                 font: 400 1.125em 'Roboto', sans-serif;
 
             }
-                .hero-button { background-color: orange;
-                width: 6rem;}
+                .hero-button { 
+                background-color:#3882F6;
+                width: 7rem;
+                height: 3rem;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 0.98rem;
+        color: #fff;
+    }
 
             .hero-right__flex {
-              outline: solid 2px red; 
-                  flex-basis: 34%;
-                    display: flex;
+              outline: solid 2px rgb(144, 143, 151); 
+                  flex-basis: 33%;
+                  display: flex;
+             
+                color: white;
             }
-            .hero-image {background-color: salmon;
-            
-                height: 500px; 
-                flex-shrink: 0;
-                z-index: 1;
+            .hero-image {background-color: slategrey;
+                flex-basis: 100%;
+                width: 100%;
+                display: flex;
+              justify-content: center;
+                align-items: center;
+             
+         
             }
 
                 /*
 
           .content-main-non-flex {}
-          
+            */
+          .info-header__text {
+              text-align: center;
+              font: 900 2.25rem 'Roboto', sans-serif;
+              color: #1F2937;
+          }
+
+          .content-main__flex-container { 
+              padding-top: 0.8rem;
+              display: flex;
+              justify-content: center;
+              gap: 2rem;
+              padding-bottom: 7rem;
+
+          }
+
+          .card {
+               display: flex;
+                flex-direction: column;
+                gap: 0.6rem;
+
+          }
+           
+          .card-text {
+              text-align: center;
+              width: 9rem;
+          }
+
+          .card-image-box { 
+              border: 4px solid #3882F6;
+              border-radius: 15px;
+              height: 9rem;
+              z-index: 12;
+            width: 9rem;
+
+        }
+
+        
     
 
         .quote__box-container {
-             background-color: #E5E7EB;
-         }
+            flex-basis: 400px;
+            background-color: #E5E7EB;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+          
+        }
 
-           /* .cta-container {
+         .quote {
+             width: 55%;
+             font:300 italic 2.25rem 'Roboto', sans-serif;
+             color: #1F2937; 
+            align-self: center;
+             
+            }
+
+         .author {
+             font: 900 1.5rem 'Roboto', sans-serif;
+             color: black;
+             align-self: flex-end;
+             width: 36%;
+        
+            }
+
+
+
+            .cta-container { 
+                 flex-basis: 150px;
             
          }
-      inside cta background-color: #3882F6;  
+      /*inside cta background-color: #3882F6;  */
          
-          .footer-container {}
-          */*/
+          .footer-container {
+            }
+     
          
         
